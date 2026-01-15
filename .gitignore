@@ -1,0 +1,38 @@
+# Claude settings
+.claude/
+
+# Development notes
+thoughts/
+
+# Test screenshots
+.playwright-mcp/
+
+# Test files
+app/test.html
+app/build-test.html
+app/server.js
+app/start-server.py
+
+# Dependencies
+node_modules/
+app/node_modules/
+
+# Build output
+app/dist/
+app/build/
+
+# Local env files
+.env
+.env.local
+*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
