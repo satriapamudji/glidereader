@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Glide Reader",
+  "version": "0.1.0",
+  "description": "Speed reading with RSVP - one word at a time. Press Alt+F to start.",
+  "permissions": ["activeTab", "storage"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "src/background/service-worker.ts",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/content-scripts/glide-inject.ts"],
+      "run_at": "document_end"
+    }
+  ],
+  "commands": {
+    "toggle-glide": {
+      "suggested_key": {
+        "default": "Alt+F"
+      },
+      "description": "Toggle Glide Mode"
+    }
+  },
+  "action": {
+    "default_title": "Open Glide Reader"
+  }
+}

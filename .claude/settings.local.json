@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "Bash(npm create:*)",
+      "Bash(npm install:*)",
+      "mcp__plugin_playwright_playwright__browser_navigate",
+      "mcp__plugin_playwright_playwright__browser_click",
+      "mcp__plugin_playwright_playwright__browser_take_screenshot",
+      "mcp__plugin_playwright_playwright__browser_wait_for",
+      "mcp__plugin_playwright_playwright__browser_close",
+      "Bash(npm run dev)",
+      "mcp__plugin_playwright_playwright__browser_snapshot",
+      "Bash(npm run build)",
+      "mcp__plugin_playwright_playwright__browser_type",
+      "mcp__plugin_playwright_playwright__browser_run_code",
+      "Bash(ls:*)"
+    ]
+  }
+}
